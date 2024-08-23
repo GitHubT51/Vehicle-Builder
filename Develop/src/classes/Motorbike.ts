@@ -46,6 +46,10 @@ class Motorbike extends Vehicle {
         this.wheels = wheels;
       }
     }
+    tow(vehicle: Motorbike ): void {
+      console.log(`${this.make} ${this.model} is towing ${vehicle.make} ${vehicle.model}`);
+    }
+
   // TODO: Implement the wheelie method
     // TODO: The method should log the message "Motorbike [make] [model] is doing a wheelie!"
    wheelie() : void {

@@ -45,7 +45,9 @@ class Car extends Vehicle {
       this.wheels = wheels;
     }
   }
-
+  tow(vehicle: Car): void {
+    console.log(`${this.make} ${this.model} is towing ${vehicle.make} ${vehicle.model}`);
+  }
   // Override the printDetails method from the Vehicle class
   override printDetails(): void {
     // Call the printDetails method of the parent class, Vehicle
